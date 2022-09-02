@@ -17,8 +17,9 @@ public class ProducerController {
 	EvenetPublisher evenetPublisher;
 
 	@PostMapping("/publish")
-	public void sendMessageToKafkaTopic(@RequestBody String message) {
+	public String sendMessageToKafkaTopic(@RequestBody String message) {
 		evenetPublisher.getTheEvent("Yohannes");
 		//this.producerService.sendMessage(message);
+		return "Yor app deploy successfully ";
 	}
 }
