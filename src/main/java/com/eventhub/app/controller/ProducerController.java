@@ -16,6 +16,6 @@ public class ProducerController {
 	public String sendMessageToKafkaTopic() {
 		evenetPublisher.getTheEvent("Yohannes");
 		//this.producerService.sendMessage(message);
-		return "Yor app deploy successfully ";
+		return "Second deployment successfully ";
 	}
 }
